@@ -3,13 +3,9 @@ import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
 const ProtocoloSchema = new mongoose.Schema({
-    cod_protocolo: {
-        type: String,
-        unique: true
-    },
-    encargado: String,
-    alumno: String,
-    responsable: String
+    filename: String,
+    contentType: String,
+    data: Buffer
 }, {
     versionKey: false,
     timestamps: true

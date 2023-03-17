@@ -54,3 +54,7 @@ export const getProtocolo = async (req, res, next) => {
         next(err);
     }
 }
+
+exports.uploadFile = (req, res) => {
+    res.send({data: 'Enviar un archivo'})
+}
