@@ -5,7 +5,6 @@ import cookieParser from "cookie-parser";
 import estudiantesRoutes from "./routes/estudiante.routes.js";
 import direccionRoutes from "./routes/direccion.routes.js";
 import encargadoRoutes from "./routes/encargado_legal.routes.js";
-import horarioDia from "./routes/horario_dia.routes.js";
 import personal from "./routes/personal.routes.js";
 import protocolo from "./routes/protocolo.routes";
 
@@ -21,7 +20,6 @@ app.use(cookieParser());
 app.use("/api/estudiante", estudiantesRoutes);
 app.use("/api/direccion", direccionRoutes);
 app.use("/api/encargado", encargadoRoutes);
-app.use("/api/horarioDia", horarioDia);
 app.use("/api/personal", personal);
 app.use("/api/protocolo", protocolo);
 
