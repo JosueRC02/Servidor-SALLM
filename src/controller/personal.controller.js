@@ -1,7 +1,5 @@
 import Personal from "../models/personal.model";
 
-
-
 export const createPersonal = async (req, res, next) => {
 
     const newPersonal = new Personal(req.body);
@@ -24,7 +22,6 @@ export const getPersonalId = async (req, res, next) => {
     }
 };
 
-
 export const updatePersonal = async (req, res, next) => {
 
     try {
@@ -44,7 +41,6 @@ export const deletePersonal = async (req, res, next) => {
         next(err);
     }
 }
-
 
 export const getPersonal = async (req, res, next) => {
     try {
